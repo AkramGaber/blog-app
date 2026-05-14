@@ -16,6 +16,15 @@
       "authorId": 1,
       "authorName": "Akram",
       "createdAt": "2026-05-15T12:00:00Z"
+    },
+    {
+      "title": "My First Real Post",
+      "description": "Testing protected post creation.",
+      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+      "authorId": 1,
+      "authorName": "Akram Gaber",
+      "createdAt": "2026-05-15T12:00:00Z",
+      "id": 2
     }
   ]
 }
