@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "email": "akram@example.com",
+      "password": "$2a$10$l0JicJY.TdagCQfdRhPRpehahF8gDJsMJzZbRGfOBQOSbsxNiWEn6",
+      "name": "Akram",
+      "id": 1
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Welcome to DevBlog",
+      "description": "This is the first sample post in the application.",
+      "image": "https://images.unsplash.com/photo-1499750310107-5fef28a66643",
+      "authorId": 1,
+      "authorName": "Akram",
+      "createdAt": "2026-05-15T12:00:00Z"
+    }
+  ]
+}
