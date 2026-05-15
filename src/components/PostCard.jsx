@@ -5,7 +5,7 @@ export default function PostCard({ post }) {
     <div className="card bg-base-100 shadow-xl">
       <figure className="h-56 overflow-hidden">
         <img
-          src={post.img}
+          src={post.image}
           alt={post.title}
           className="w-full h-full object-cover"
         />
