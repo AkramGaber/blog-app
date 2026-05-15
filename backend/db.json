@@ -5,6 +5,12 @@
       "password": "$2a$10$l0JicJY.TdagCQfdRhPRpehahF8gDJsMJzZbRGfOBQOSbsxNiWEn6",
       "name": "Akram",
       "id": 1
+    },
+    {
+      "email": "akram@gmail.com",
+      "password": "$2a$10$w44ktAuaHh6cKDXWQnnuGuObAuuuXiS.40v5nOuHqywTIQIc6F8su",
+      "name": "Akram",
+      "id": 2
     }
   ],
   "posts": [
