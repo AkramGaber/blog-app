@@ -1,0 +1,24 @@
+{
+  "rewrites": [
+    {
+      "source": "/posts/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/register",
+      "destination": "/api"
+    },
+    {
+      "source": "/login",
+      "destination": "/api"
+    },
+    {
+      "source": "/660/(.*)",
+      "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
