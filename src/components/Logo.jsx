@@ -5,7 +5,7 @@ export default function Logo() {
   return (
     <div>
         <Link to="/" className='text-2xl font-bold text-primary'>
-            DevBlog
+            ITI Blog
         </Link>
     </div>
   )
