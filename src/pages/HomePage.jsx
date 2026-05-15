@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { getPosts } from "../services/postService";
-import { useAuth } from "../contexts/AuthContext";
 import LoadingSpinner from "../components/LoadingSpinner";
 import EmptyState from "../components/EmptyState";
 import PostList from "../components/PostList";
@@ -24,6 +23,10 @@ export default function HomePage() {
     fetchPosts();
   }, []);
 
+  const handleDelete = (deleteId) => {
+    setPosts((prevPosts) => prevPosts.filter((post) => post.id !== deleteId));
+  };
+
   if (loading) {
     return <LoadingSpinner />;
   }
@@ -32,17 +35,17 @@ export default function HomePage() {
     return <EmptyState title="Error Loading Posts" description={error} />;
   }
 
-  if(posts.length === 0) return <EmptyState />;
+  if (posts.length === 0) return <EmptyState />;
 
   return (
     <section className="space-y-8">
-        <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Feed</h1>
-            <p className="text-base-content/70">
-                Explore the Latest posts from Our ITI -ذوي الشوارب- Community.
-            </p>
-        </div>
-        <PostList posts={posts} />
+      <div className="text-center">
+        <h1 className="text-4xl font-bold mb-4">Feed</h1>
+        <p className="text-base-content/70">
+          Explore the Latest posts from Our ITI -ذوي الشوارب- Community.
+        </p>
+      </div>
+      <PostList posts={posts} onDelete={handleDelete} />
     </section>
   );
 }

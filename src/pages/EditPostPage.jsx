@@ -1,7 +1,8 @@
 import React from 'react'
+import PostForm from '../components/PostForm'
 
 export default function EditPostPage() {
   return (
-    <div className='text-3xl font-bold'>EditPost id</div>
+    <PostForm />
   )
 }

@@ -11,6 +11,12 @@
       "password": "$2a$10$w44ktAuaHh6cKDXWQnnuGuObAuuuXiS.40v5nOuHqywTIQIc6F8su",
       "name": "Akram",
       "id": 2
+    },
+    {
+      "email": "ahmed@gmail.com",
+      "password": "$2a$10$L4XDSTFmKdxB4BLi7FCGlO8.LsAxd2Tilvqdzrr/hOhqTnB8PlYO2",
+      "name": "Ahmed",
+      "id": 3
     }
   ],
   "posts": [
@@ -33,13 +39,22 @@
       "id": 2
     },
     {
-      "title": "Frameworks",
+      "title": "Frameworks Hell",
       "description": "Frameworks hell is what we will be talking about today jumping from node/express to nest right to react to angular arriving at next.",
       "image": "https://i.ibb.co/99hJ8xGx/frameworks.png",
       "authorId": 2,
       "authorName": "Akram",
-      "createdAt": "2026-05-15T18:26:58.738Z",
+      "createdAt": "2026-05-15T19:15:45.326Z",
       "id": 3
+    },
+    {
+      "title": "Salvation - Survivorship",
+      "description": "You hope for salvation, yet you do not follow its paths; indeed, a ship does not sail on dry land.\nتَرجو النَجاةَ وَلَم تَسلُك مَسالِكَها · إِنَّ السَفينَةَ لا تَجري عَلى اليَبَسِ",
+      "image": "https://i.ibb.co/hFYW6zjJ/survivorship.jpg",
+      "authorId": 3,
+      "authorName": "Ahmed",
+      "createdAt": "2026-05-15T19:25:00.039Z",
+      "id": 4
     }
   ]
 }
