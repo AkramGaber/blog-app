@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { getPosts } from '../services/postService'
+import { useAuth } from '../contexts/AuthContext';
+
 
 export default function HomePage() {
+    const { user, isAuthenticated, logout, } = useAuth();
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
@@ -31,8 +34,19 @@ export default function HomePage() {
 
   return (
     <div className='space-y-6'>
-        <h1 className='text-4xl font-bold'>Recent Posts</h1>
-        <div className='flex gap-6'>
+        <h1 className='text-4xl font-bold'>Authentication test</h1>
+        {isAuthenticated ? (
+            <div className='card bg-base-100 shadow-md p-6 space-y-4'>
+                <p>Welcome, <strong>{user?.name}</strong></p>
+                <p>Email: {user?.email}</p>
+                <button onClick={logout} className='btn btn-error'>Logout</button>
+            </div>
+        ) : (
+            <div className='card bg-base-100 shadow-md p-6'>
+                <p>No user is currently logged in.</p>
+            </div>
+        )}
+        {/* <div className='flex gap-6'>
             {posts.length === 0 ? (
                 <p>No posts Found</p>
             ) : (
@@ -47,7 +61,7 @@ export default function HomePage() {
                     </div>
                 ))
             )}
-        </div>
+        </div> */}
     </div>
   )
 }
